@@ -1,8 +1,2 @@
-# Spacewasabi
-
-rspec-exp
-Test webpage using selenium ruby and rspecs.
-
-
-#### franko
-sinatra experience
+# zioFranco:
+sinatra ruby experiments lunapark
