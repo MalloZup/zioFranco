@@ -1,14 +1,16 @@
 #! /usr/bin/ruby
 
 require 'sinatra'
-
+require_relative 'db/database.rb'
 
 get '/' do
   "Hello, World!"
 end
 
-get '/about' do
-  'A little about me.'
+get '/review' do
+  # get the latest 20 posts
+  @posts = Post.all(order: [ :id.desc ], limit: 20)
+  erb :review
 end
 
 get '/bug/:number' do
